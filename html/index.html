@@ -11,12 +11,12 @@
     <!-- My own custom styles -->
     <link rel="stylesheet" href="../css/custom-styles.css">
 
-    <title>My Sage Reports!</title>
+    <title>My Reports!</title>
     
   </head>
 
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light  " style="background-color: #3575d3;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark  " style="background-color: #8bbc7a;">
       <a class="navbar-brand" href="#">My Sage Reports</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
                 <p class="card-text">This is your dashboard .</p>
               </div>
               <ul class="list-group list-group-flush border-primary">
-                <li class="list-group-item">Bar graphs</li>
+                <li class="list-group-item"><a href="dailyPluckingTotal.html">My Reports</a></li>
                 <li class="list-group-item">Line Graph</li>
                 <li class="list-group-item">Pie Charts</li>
               </ul>
@@ -64,27 +64,25 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col">
-                  <div class="card text-white bg-primary mb-3">
+                  <div class="card text-white mb-3" style="background: #c0c4e7">
                     <div class="card-header">My Pie</div>
                     <div class="card-body">
-                      <div id="chart_div"></div>
+                      <div id="pieChart_div"></div>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card text-white bg-primary mb-3">
+                  <div class="card text-white mb-3" style="background: #7cbee1">
                     <div class="card-header">My Bar Chart</div>
                     <div class="card-body">
                       <div id="barChart_div"></div>
-                      <!-- <h5 class="card-title">Primary card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <div class="card text-white bg-primary mb-3">
+                  <div class="card text-white mb-3" style="background: #009680">
                     <div class="card-header">My Calender chart</div>
                     <div class="card-body">
                       <div id="calendar_chart" style="width: 1000px; height: 350px;"></div>
@@ -102,7 +100,7 @@
     
     <!--Load the AJAX API-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="../js/pie.js"></script>
+    <script type="text/javascript" src="../js/drawPieChart.js"></script>
     <script type="text/javascript" src="../js/barChart.js"></script>
     <script type="text/javascript" src="../js/calendarChart.js"></script>
 
