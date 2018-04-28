@@ -1,0 +1,13 @@
+body{
+	background-image: url("../assets/images/filterByDate2.png");
+	
+}
+.row{	
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-container{
+  padding: 2rem 2rem 0 0;
+}

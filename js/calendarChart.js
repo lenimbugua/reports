@@ -27,7 +27,14 @@
 
        var options = {
          title: "Tea plucked",
-         height: 350,
+         height: 350,      
+          monthLabel: {
+            fontName: 'Times-Roman',
+            fontSize: 20,
+            color: 'white',
+            bold: true,
+            italic: false
+          }
        };
 
        chart.draw(dataTable, options);
